@@ -8,10 +8,10 @@ interface HeroProps {
 
 const Hero = ({ scrollToSection }: HeroProps) => {
   // Corrected direct link for Google Drive image
-  const profileImageUrl = "https://drive.google.com/uc?export=view&id=1J-3YmOd4WjxLuLcbbT1f0O6r7nNr1uLa";
+  const profileImageUrl = "https://drive.google.com/file/d/1OF1XPsGsI_MjC5ahCxUBjVsExzFATRz6/view?usp=drivesdk ";
   
   // Resume download link
-  const resumeUrl = "https://drive.google.com/file/d/1ZK3oOWflPnbCkXTCd0zl-dMdqf4Jo-JE/view?usp=drivesdk ";
+  const resumeUrl = "https://drive.google.com/file/d/1O6YXMiZVSffVQ42l9KVmpkntcudCQ9fY/view?usp=drivesdk";
 
   return (
     <div className="container mx-auto px-6 pt-32 pb-20">
