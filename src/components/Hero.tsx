@@ -9,9 +9,9 @@ interface HeroProps {
 const Hero = ({ scrollToSection }: HeroProps) => {
   // Corrected direct link for Google Drive image
   const profileImageUrl = "https://drive.google.com/uc?export=view&id=1J-3YmOd4WjxLuLcbbT1f0O6r7nNr1uLa";
-  
+
   // Resume download link
-  const resumeUrl = "https://drive.google.com/file/d/1vpijOjHMeadZVkS3HSE-_kIcNYhWmeds/view?usp=drivesdk";
+  const resumeUrl = "https://drive.google.com/file/d/1vrMCUmWD-7fvIwOcRfSNEnK2qRzu9Cnf/view?usp=drivesdk";
 
   return (
     <div className="container mx-auto px-6 pt-32 pb-20">
@@ -38,7 +38,7 @@ const Hero = ({ scrollToSection }: HeroProps) => {
                 View My Work
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              
+
               <Button
                 variant="outline"
                 onClick={() => scrollToSection("contact")}
@@ -46,7 +46,7 @@ const Hero = ({ scrollToSection }: HeroProps) => {
               >
                 Get In Touch
               </Button>
-              
+
               <Button
                 variant="outline"
                 onClick={() => window.open(resumeUrl, "_blank")}
@@ -57,18 +57,22 @@ const Hero = ({ scrollToSection }: HeroProps) => {
               </Button>
             </div>
 
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-gray-200 dark:border-gray-700">
+            <div className="grid grid-cols-4 gap-6 pt-8 border-t border-gray-200 dark:border-gray-700">
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">9.23</div>
+                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">9.37</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">CGPA</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">3+</div>
+                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">6+</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">Projects</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">DSA</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Certified</div>
+                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">800+</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">DSA Problems</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">1812</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">LeetCode</div>
               </div>
             </div>
           </div>
@@ -78,10 +82,10 @@ const Hero = ({ scrollToSection }: HeroProps) => {
               <div className="w-80 h-80 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 dark:from-blue-600 dark:to-purple-600 p-1 animate-scale-in">
                 <div className="w-full h-full rounded-full bg-white dark:bg-gray-800 p-2">
                   <Avatar className="w-full h-full">
-                    <AvatarImage 
-                      src="https://media.licdn.com/dms/image/v2/D5603AQFIJ0vCS7H69A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730188211429?e=1753315200&v=beta&t=Cd9gJa9SfjlK2NWCkCRtpC9O6FzdYho6IFliGWLSHZY"
-                      alt="Sajal Rastogi" 
-                      className="w-full h-full object-cover rounded-full" 
+                    <AvatarImage
+                      src="https://avatars.githubusercontent.com/u/180467900?v=4"
+                      alt="Sajal Rastogi"
+                      className="w-full h-full object-cover rounded-full"
                     />
                     <AvatarFallback className="text-5xl">SR</AvatarFallback>
                   </Avatar>

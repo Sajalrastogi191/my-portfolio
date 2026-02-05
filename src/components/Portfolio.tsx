@@ -6,48 +6,57 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "ExamPaper-Container",
-      description: "A comprehensive platform for browsing and uploading exam papers and solutions. Built with MERN stack for seamless user experience.",
-      technologies: ["React.js", "Node.js", "Express.js", "MongoDB"],
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
-      github: "https://github.com/Sajalrastogi191",
+      title: "CodeWithPair",
+      description: "Real-time pair coding platform with WebSocket-based collaboration supporting multiple users in a single session. Features live code synchronization and in-room chat.",
+      technologies: ["React.js", "Node.js", "WebSocket", "Monaco Editor"],
+      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop",
+      github: "https://github.com/Sajalrastogi191/CodeWithPair",
       demo: "#"
     },
     {
       id: 2,
-      title: "Chess - Multiplayer Web App",
-      description: "Real-time multiplayer chess game featuring custom frontend design and WebSocket integration for live gameplay.",
-      technologies: ["JavaScript", "WebSocket", "CSS", "HTML"],
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
-      github: "https://github.com/Sajalrastogi191",
+      title: "SplitTheExpenses",
+      description: "Full-stack mobile app for managing shared expenses with React Native. Features real-time expense tracking and seamless group management.",
+      technologies: ["React Native", "Expo", "Node.js", "MongoDB"],
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop",
+      github: "https://github.com/Sajalrastogi191/SplitTheExpenses",
       demo: "#"
     },
     {
       id: 3,
-      title: "Hisaab – Expense Splitter",
-      description: "Intuitive expense tracking and splitting application with modern UI/UX design for seamless financial management.",
-      technologies: ["React.js", "JavaScript", "CSS", "Local Storage"],
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
-      github: "https://github.com/Sajalrastogi191",
+      title: "ExamPaper-Container",
+      description: "A comprehensive platform for browsing and uploading university exam papers with secure file uploads and dynamic filtering.",
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB"],
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
+      github: "https://github.com/Sajalrastogi191/exam-repo",
       demo: "#"
     },
     {
       id: 4,
-      title: "Wireless Image Transmission via NRF Module",
-      description: "Securely transmit images using NRF modules for real-time surveillance and monitoring applications.",
-      technologies: ["Local Storage", "Arduino Uno", "Python"],
-      image: "https://static.wixstatic.com/media/99ba69_9538f51eec224f4caa9871889e6e59bf~mv2.jpg/v1/fill/w_560,h_412,al_c,lg_1,q_80,enc_avif,quality_auto/99ba69_9538f51eec224f4caa9871889e6e59bf~mv2.jpg",
-      github: "https://github.com/Sajalrastogi191",
+      title: "Chess - Multiplayer Web App",
+      description: "Real-time multiplayer chess game featuring custom frontend design and WebSocket integration for live gameplay.",
+      technologies: ["JavaScript", "WebSocket", "CSS", "HTML"],
+      image: "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=600&h=400&fit=crop",
+      github: "https://github.com/Sajalrastogi191/chess",
       demo: "#"
     },
     {
       id: 5,
-      title: "Data Structure And Algorithm",
-      description: "Strong foundation in data structure and algorithm",
-      technologies: ["c++"],
-      image: "https://i.ytimg.com/vi/Qmt0QwzEmh0/maxresdefault.jpg",
-      github: "https://github.com/Sajalrastogi191",
-      demo: "https://drive.google.com/file/d/16VEUfP8QlDWoggeSAbpcIZXqqhF-mwrb/view?usp=drivesdk "
+      title: "Attendance-Manager",
+      description: "React Native app for attendance and timetable management. Streamlines tracking for students and staff.",
+      technologies: ["React Native", "Expo", "JavaScript"],
+      image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&h=400&fit=crop",
+      github: "https://github.com/Sajalrastogi191/Attendance-Manager",
+      demo: "#"
+    },
+    {
+      id: 6,
+      title: "Wireless Image Transmission via NRF Module",
+      description: "Securely transmit images using NRF modules for real-time surveillance and monitoring applications.",
+      technologies: ["Python", "Arduino Uno", "nRF24"],
+      image: "https://static.wixstatic.com/media/99ba69_9538f51eec224f4caa9871889e6e59bf~mv2.jpg/v1/fill/w_560,h_412,al_c,lg_1,q_80,enc_avif,quality_auto/99ba69_9538f51eec224f4caa9871889e6e59bf~mv2.jpg",
+      github: "https://github.com/Sajalrastogi191/nRF24_Image_Transmission",
+      demo: "#"
     }
   ];
 
@@ -80,7 +89,7 @@ const Portfolio = () => {
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed text-sm">
                   {project.description}
                 </p>
 
@@ -99,18 +108,10 @@ const Portfolio = () => {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="flex-1 border-blue-600 dark:border-blue-500 text-blue-600 dark:text-blue-400 hover:bg-blue-600 dark:hover:bg-blue-700 hover:text-white"
+                    className="w-full border-blue-600 dark:border-blue-500 text-blue-600 dark:text-blue-400 hover:bg-blue-600 dark:hover:bg-blue-700 hover:text-white"
                     onClick={() => window.open(project.github, "_blank")}
                   >
-                    GitHub
-                  </Button>
-                  <Button
-                    size="sm"
-                    className="flex-1 bg-blue-600 dark:bg-blue-700 hover:bg-blue-700 dark:hover:bg-blue-600"
-                    onClick={() => window.open(project.demo, "_blank")}
-                  >
-                    Live Demo
-                    <ArrowRight className="ml-1 h-4 w-4" />
+                    View on GitHub
                   </Button>
                 </div>
               </div>

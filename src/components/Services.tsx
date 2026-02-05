@@ -12,13 +12,23 @@ const Services = () => {
       features: ["REST API Design", "Database Integration", "Authentication Systems", "Server Optimization"]
     },
     {
+      title: "Mobile App Development",
+      description: "Cross-platform mobile applications using React Native and Expo with smooth performance and native-like experience.",
+      features: ["React Native Apps", "Expo Development", "Cross-Platform", "Mobile UI/UX"]
+    },
+    {
       title: "Full-Stack Solutions",
       description: "End-to-end web applications using the MERN stack, from concept to deployment with scalable architecture.",
       features: ["MERN Stack Development", "Database Design", "Deployment Solutions", "Scalable Architecture"]
     },
     {
+      title: "Real-Time Applications",
+      description: "WebSocket-based real-time features for collaborative tools, live updates, and interactive experiences.",
+      features: ["WebSocket Integration", "Live Collaboration", "Real-Time Updates", "Socket.io"]
+    },
+    {
       title: "Problem Solving & DSA",
-      description: "Algorithm optimization and data structure implementation for efficient and high-performance applications.",
+      description: "800+ problems solved with LeetCode rating 1812. Algorithm optimization and efficient code implementation.",
       features: ["Algorithm Design", "Code Optimization", "Performance Analysis", "Technical Consulting"]
     }
   ];
@@ -30,7 +40,7 @@ const Services = () => {
           Services I Offer
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={service.title}
@@ -39,16 +49,16 @@ const Services = () => {
                 animationDelay: `${index * 150}ms`
               }}
             >
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                 {service.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-sm">
                 {service.description}
               </p>
 
               <ul className="space-y-3">
                 {service.features.map((feature) => (
-                  <li key={feature} className="flex items-center text-gray-700 dark:text-gray-300">
+                  <li key={feature} className="flex items-center text-gray-700 dark:text-gray-300 text-sm">
                     <div className="w-2 h-2 bg-blue-600 dark:bg-blue-500 rounded-full mr-3 flex-shrink-0" />
                     {feature}
                   </li>

@@ -97,7 +97,7 @@ const Contact = () => {
 
         <div className="mt-12 pt-8 border-t border-gray-700">
           <p className="text-gray-400 text-center">
-            © 2024 Sajal Rastogi. Building the future, one line of code at a time.
+            © 2025 Sajal Rastogi. Building the future, one line of code at a time.
           </p>
         </div>
       </div>
