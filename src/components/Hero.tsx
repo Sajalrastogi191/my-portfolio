@@ -11,7 +11,7 @@ const Hero = ({ scrollToSection }: HeroProps) => {
   const profileImageUrl = "https://drive.google.com/uc?export=view&id=1J-3YmOd4WjxLuLcbbT1f0O6r7nNr1uLa";
 
   // Resume download link
-  const resumeUrl = "https://drive.google.com/file/d/1vrMCUmWD-7fvIwOcRfSNEnK2qRzu9Cnf/view?usp=drivesdk";
+  const resumeUrl = "https://drive.google.com/file/d/17huKQgyW9o7FP4AjStfHpLGE4Qk3l-O9/view?usp=drivesdk";
 
   return (
     <div className="container mx-auto px-6 pt-32 pb-20">
